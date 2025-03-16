@@ -49,11 +49,11 @@ dependencies {
     implementation(libs.androidx.ui.graphics)
     implementation(libs.androidx.ui.tooling.preview)
     implementation(libs.androidx.material3)
-    implementation (libs.androidx.lifecycle.viewmodel.ktx)  // ViewModel
-    implementation (libs.androidx.lifecycle.livedata.ktx)   // LiveData
-    implementation (libs.retrofit)  // Retrofit
-    implementation (libs.converter.gson)  // Gson Converter
-    implementation (libs.kotlinx.coroutines.android)  // Coroutines
+    implementation (libs.androidx.lifecycle.viewmodel.ktx)
+    implementation (libs.androidx.lifecycle.livedata.ktx)
+    implementation (libs.retrofit)
+    implementation (libs.converter.gson)
+    implementation (libs.kotlinx.coroutines.android)
     implementation (libs.androidx.lifecycle.viewmodel.compose)
     implementation(libs.androidx.runtime.livedata)
     implementation(libs.androidx.navigation.compose)

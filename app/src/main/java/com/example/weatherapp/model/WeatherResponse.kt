@@ -1,6 +1,5 @@
 package com.example.weatherapp.model
 
-import androidx.compose.ui.unit.TextUnit
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 import retrofit2.http.GET

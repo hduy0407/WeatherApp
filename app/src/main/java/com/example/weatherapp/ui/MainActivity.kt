@@ -10,13 +10,9 @@ import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
-import androidx.compose.material.icons.Icons
-import androidx.compose.material.icons.filled.Add
 import androidx.compose.material3.Button
 import androidx.compose.material3.CircularProgressIndicator
 import androidx.compose.material3.ExperimentalMaterial3Api
-import androidx.compose.material3.FloatingActionButton
-import androidx.compose.material3.Icon
 import androidx.compose.material3.OutlinedTextField
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
@@ -41,7 +37,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.font.FontStyle
 import androidx.compose.ui.text.font.FontWeight
-import com.example.weatherapp.model.WeatherResponse
+
 
 
 class MainActivity : ComponentActivity() {
@@ -108,7 +104,6 @@ fun WeatherScreen(navController: NavHostController, modifier: Modifier = Modifie
 
                 Spacer(modifier = Modifier.height(16.dp))
 
-                // Show city name if the weather data is available
                 weatherData?.let {
                     Column(
                         horizontalAlignment = Alignment.CenterHorizontally,
@@ -134,12 +129,10 @@ fun WeatherScreen(navController: NavHostController, modifier: Modifier = Modifie
                     }
                 }
 
-                // Show loading spinner if data is being fetched
                 if (isLoading) {
                     CircularProgressIndicator()
                 }
 
-                // Show error message if there's an error
                 errorMessage?.let {
                     Text(text = it, color = MaterialTheme.colorScheme.error)
                 }
